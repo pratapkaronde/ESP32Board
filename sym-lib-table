@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "ESP32-S3-WROOM-1-N4R2")(type "KiCad")(uri "${KIPRJMOD}/Parts/ESP32-S3-WROOM-1-N4R2/ESP32-S3-WROOM-1-N4R2.kicad_sym")(options "")(descr ""))
+  (lib (name "SP0503BAHTG")(type "KiCad")(uri "${KIPRJMOD}/Parts/SP0503BAHTG/SP0503BAHTG.kicad_sym")(options "")(descr ""))
+  (lib (name "SS8050-G")(type "KiCad")(uri "${KIPRJMOD}/Parts/SS8050-G/SS8050-G.kicad_sym")(options "")(descr ""))
+)
