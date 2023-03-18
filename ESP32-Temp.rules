@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2379)
+    (start_pass_no 2726)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -102,19 +102,19 @@
     )
   )
   (class "kicad_default"
-    GND "USB_VDD" 3v3 DTR /b7 /b6 "Net-(D3-DOUT)" /b5
-    "Net-(D3-DIN)" "Net-(D4-DOUT)" "Net-(D5-DOUT)" "unconnected-(D6-DOUT-Pad2)" /b4 "Net-(D7-A)" "Net-(D8-A)" "Net-(D9-A)"
-    /IO37 /IO36 /IO35 /IO21 /IO20 /IO19 /IO18 /IO16
-    "Net-(D10-A)" "Net-(D11-A)" /IO15 /b3 /b2 /b1 /b0 /IO48
-    SDA /IO47 /IO46 /IO45 "Net-(J1-CC1)" "unconnected-(J1-SBU1-PadA8)" "Net-(J1-CC2)" "unconnected-(J1-SBU2-PadB8)"
-    "USB_D-" "USB_D+" TXT VBUS /IO42 /IO41 "Net-(J4-Pin_1)" RXT
+    GND "EXT_5V" 3v3 "USB_VDD" DTR /b7 /b6 "Net-(D3-DOUT)"
+    /b5 "Net-(D3-DIN)" "Net-(D4-DOUT)" "Net-(D5-DOUT)" "unconnected-(D6-DOUT-Pad2)" /b4 "Net-(D7-A)" "Net-(D8-A)"
+    "Net-(D9-A)" "unconnected-(U1-IO15-Pad8)" "unconnected-(U1-IO16-Pad9)" "unconnected-(U1-IO18-Pad11)" "unconnected-(U1-IO19-Pad13)" "unconnected-(U1-IO20-Pad14)" "unconnected-(U1-IO21-Pad23)" "unconnected-(U1-IO35-Pad28)"
+    "unconnected-(U1-IO36-Pad29)" "Net-(D10-A)" "Net-(D11-A)" "unconnected-(U1-IO37-Pad30)" /b3 /b2 /b1 /b0
+    /IO48 SDA /IO47 /IO46 /IO45 "Net-(J1-CC1)" "unconnected-(J1-SBU1-PadA8)" "Net-(J1-CC2)"
+    "unconnected-(J1-SBU2-PadB8)" "USB_D-" "USB_D+" TXT /IO42 /IO41 "Net-(J4-Pin_1)" RXT
     "Net-(J7-Pin_2)" /IO40 /IO39 /IO38 "USB_TXD" "USB_RXD" "Net-(J7-Pin_3)" "Net-(J7-Pin_4)"
     "Net-(U3-~{RST})" "Net-(U2-A->B)" "Net-(U4-EN)" "unconnected-(U1-IO6-Pad6)" "unconnected-(U1-IO17-Pad10)" "unconnected-(U1-IO3-Pad15)" "unconnected-(U1-IO2-Pad38)" "unconnected-(U1-IO1-Pad39)"
     "unconnected-(U3-~{DCD}-Pad1)" "unconnected-(U3-~{RI}{slash}CLK-Pad2)" "unconnected-(U3-NC-Pad10)" "unconnected-(U3-~{SUSPEND}-Pad11)" "Net-(Q1-Pad1)" "unconnected-(U3-SUSPEND-Pad12)" RTS "Net-(Q2-Pad1)"
-    EN BOOT "unconnected-(U3-CHREN-Pad13)" SCL /a0 /a1 /a2 /a3
-    /a4 /a5 /a6 /a7 "unconnected-(U3-CHR1-Pad14)" "unconnected-(U3-CHR0-Pad15)" "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad16)" "unconnected-(U3-RS485{slash}GPIO.2-Pad17)"
-    "unconnected-(U3-GPIO.6-Pad20)" "unconnected-(U3-GPIO.5-Pad21)" "unconnected-(U3-GPIO.4-Pad22)" "unconnected-(U3-~{CTS}-Pad23)" "unconnected-(U3-~{DSR}-Pad27)" "unconnected-(U4-NC-Pad4)" "Net-(J7-Pin_5)" "Net-(J7-Pin_6)"
-    "Net-(J7-Pin_7)" "Net-(J7-Pin_8)"
+    EN BOOT "unconnected-(U3-CHREN-Pad13)" "/VBUS_REG" SCL /a0 /a1 /a2
+    /a3 /a4 /a5 /a6 /a7 "unconnected-(U3-CHR1-Pad14)" "unconnected-(U3-CHR0-Pad15)" "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad16)"
+    "unconnected-(U3-RS485{slash}GPIO.2-Pad17)" "unconnected-(U3-GPIO.6-Pad20)" "unconnected-(U3-GPIO.5-Pad21)" "unconnected-(U3-GPIO.4-Pad22)" "unconnected-(U3-~{CTS}-Pad23)" "unconnected-(U3-~{DSR}-Pad27)" "unconnected-(U4-NC-Pad4)" "Net-(J7-Pin_5)"
+    "Net-(J7-Pin_6)" "Net-(J7-Pin_7)" "Net-(J7-Pin_8)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -125,7 +125,7 @@
     )
   )
   (class Power
-    "/VBUS_REG" "VB_USB" "V_SEL"
+    VBUS "VB_USB"
     (clearance_class Power)
     (via_rule Power)
     (rule
@@ -136,7 +136,7 @@
     )
   )
   (class "Power_L"
-    "EXT_5V"
+    "V_SEL"
     (clearance_class "Power_L")
     (via_rule Power_L)
     (rule
